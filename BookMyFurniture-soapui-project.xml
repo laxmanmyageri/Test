@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="fe3a3601-d426-42aa-a9d7-b18f5835b1f2" activeEnvironment="Default" name="BookMyFurniture" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="9598c2cf-1c2e-4fb4-9b6c-59463717423d" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://okmry52647dns.eastus.cloudapp.azure.com:8089" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint></con:endpoints><con:resource name="Signup" path="/rest/api/signup/" id="4e705340-1340-4b29-992f-26628ac09c06"><con:settings/><con:parameters/><con:method name="Signup 1" id="9e9e3bd0-c8d3-40e1-be0e-a571de6e650d" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200 202</con:status><con:params/><con:element xmlns:sig="http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/signup/">sig:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="bc4d673f-a1e7-43cc-878e-8bd197b472cf" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request>{
+  "emailId": "string",
+  "gender": "MALE",
+  "mobileNo": "string",
+  "name": "Soumya, Harish, etc..",
+  "password": "string",
+  "role": {
+    "description": "string",
+    "name": "Admin, user, etc..",
+    "roleId": 1234
+  },
+  "userStatus": "ACTIVE"
+}</con:request><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/signup/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="signin" path="/rest/api/login/signin" id="76aaa050-93b3-43f5-bdf8-1c5c97fec83e"><con:settings/><con:parameters/><con:method name="Method 1" id="f6e166c8-8737-4968-8384-4539f69ac02a" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>202 200</con:status><con:params/><con:element xmlns:sig="http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/login/signin">sig:Response</con:element></con:representation><con:request name="Request 1" id="53796dc2-c58c-4b27-822d-f8b82e2e0e19" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request>{
+  "emailId": "string",
+  "name": "Soumya, Harish, etc..",
+  "password": "string",
+  "role": {
+    "description": "string",
+    "name": "Admin, user, etc..",
+    "roleId": 1234
+  },
+  "userId": 12345
+}</con:request><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/login/signin</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="AddCart" path="/rest/api/cart/user/undefined" id="34f7fb66-5807-4bd1-b523-f4e12393a06c"><con:settings/><con:parameters/><con:method name="Method 1" id="12b51e28-784d-4c98-b248-89529c959e27" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:und="http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/cart/user/undefined">und:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="fb8f0ed9-a85c-4c6e-a6bf-6507656cf391" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request>{
+  "availability": true,
+  "categoryId": {
+    "description": "string",
+    "id": 0,
+    "name": "string"
+  },
+  "color": "string",
+  "createdOn": "string",
+  "description": "string",
+  "discount": 0,
+  "images": [
+    {
+      "description": "string",
+      "id": 0,
+      "pimage": "string",
+      "title": "string"
+    }
+  ],
+  "materialDescription": "string",
+  "name": "armchair etc..",
+  "pid": 12345,
+  "price": 0,
+  "primaryImage": {},
+  "updateOn": "string",
+  "warranty": 0
+}</con:request><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/cart/user/undefined</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GetCart" path="/rest/api/cart/undefined" id="5a6d25ef-fd76-44ff-8edf-231eaadfafce"><con:settings/><con:parameters/><con:method name="Method 1" id="4b11c727-b617-4b47-82cd-84344ef1b898" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:und="http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/cart/undefined">und:Fault</con:element></con:representation><con:request name="Request 1" id="5e4e0044-5606-4ba4-a100-ced863e4e5e8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request/><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/cart/undefined</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="UpdateCart" path="/rest/api/cart/" id="3034fccc-36bc-4664-8541-65858a32470d"><con:settings/><con:parameters/><con:method name="Method 1" id="47697b2d-25b9-4715-bf77-cb341ec1c637" method="PUT"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:cart="http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/cart/">cart:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="5f98a76d-e9f6-464d-9d96-1f61e2695278" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request>{
+  "cartId": 1234,
+  "product": {
+    "availability": true,
+    "categoryId": {
+      "description": "string",
+      "id": 0,
+      "name": "string"
+    },
+    "color": "string",
+    "createdOn": "string",
+    "description": "string",
+    "discount": 0,
+    "images": [
+      {
+        "description": "string",
+        "id": 0,
+        "pimage": "string",
+        "title": "string"
+      }
+    ],
+    "materialDescription": "string",
+    "name": "armchair etc..",
+    "pid": 12345,
+    "price": 0,
+    "primaryImage": {},
+    "updateOn": "string",
+    "warranty": 0
+  },
+  "profile": {
+    "addressCity": "string",
+    "addressLandMark": "string",
+    "addressLane1": "string",
+    "addressLane2": "string",
+    "addressState": "string",
+    "addressZipCode": "string",
+    "emailId": "string",
+    "gender": "MALE",
+    "mobileNo": "string",
+    "name": "jamal,vincent, etc..",
+    "password": "string",
+    "role": {
+      "description": "string",
+      "name": "Admin, user, etc..",
+      "roleId": 1234
+    },
+    "userId": 1234,
+    "userStatus": "ACTIVE"
+  },
+  "quantity": 0
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="Delete" path="/rest/api/cart/undefined" id="0f18fba3-e858-4f2c-b228-707de452a459"><con:settings/><con:parameters/><con:method name="Method 1" id="b23e95ed-06ef-4944-a1ee-ecc6f322d661" method="DELETE"><con:settings/><con:parameters/><con:request name="Request 1" id="9817e8a2-6226-4227-83c1-2396fa5c707b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request>Cartid</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GetAllCategory" path="/rest/api/category/all" id="6c2a3eda-b193-4986-abf5-eff7f31e221a"><con:settings/><con:parameters/><con:method name="Method 1" id="8a661333-5d42-4a04-befd-6526cae9db4d" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:all="http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/category/all">all:Response</con:element></con:representation><con:request name="Request 1" id="98556435-9e13-4d7e-ac5e-0c39f457e18d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request/><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/category/all</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GetAllProduct" path="/rest/api/product/all" id="92d27b5c-9d9f-4fbc-a728-531be88c26f9"><con:settings/><con:parameters/><con:method name="Method 1" id="eee0f441-1df5-47c0-8cf7-f0bd2ad0b196" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="66588563-fedd-4e63-995c-1ae5fa431f4e" mediaType="application/json"><con:settings/><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="product" path="/rest/api/product/1" id="b1a774e1-d88c-4f6e-94de-bdf18e676218"><con:settings/><con:parameters/><con:method name="Method 1" id="7bbfe612-f7f4-401e-9b01-d862608f7ce3" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/product/1">ns:Response</con:element></con:representation><con:request name="Request 1" id="e012460a-0bbc-4858-95b8-d4534c4bf35c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request/><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/product/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="ddafb383-66d3-4e4d-8cc2-8bcc75cc3fa8" name="TestSuite"><con:description>TestSuite generated for REST Service [http://okmry52647dns.eastus.cloudapp.azure.com:8089]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c468d155-f8be-4582-aada-1f63e1057701" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Signup TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Signup] located at [/rest/api/signup/]</con:description><con:settings/><con:testStep type="restrequest" name="User ID created" id="2440d07e-a06e-4a16-ad73-be60c787e514"><con:settings/><con:config service="http://okmry52647dns.eastus.cloudapp.azure.com:8089" resourcePath="/rest/api/signup/" methodName="Signup 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="User ID created" id="bc4d673f-a1e7-43cc-878e-8bd197b472cf" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request>{
+  "emailId": "lucky11@gmail.com",
+  "gender": "MALE",
+  "mobileNo": "2141231234",
+  "name": "Laxman",
+  "password": "Welcome@123",
+  "role": {
+    "description": "Created for automation testing",
+    "name": "user",
+    "roleId": 1212
+  },
+  "userStatus": "ACTIVE"
+}</con:request><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/signup/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Store Credentials" id="f8c71f26-f9ea-4e5c-adf1-3bf1f2f1d9cf"><con:settings/><con:config><script/></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="9d99ea41-8341-41a3-af91-f94ce0ca800c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="signin TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [signin] located at [/rest/api/login/signin]</con:description><con:settings/><con:testStep type="restrequest" name="Signin" id="572f07e6-1a11-484b-85eb-205fb9cf5233"><con:settings/><con:config service="http://okmry52647dns.eastus.cloudapp.azure.com:8089" resourcePath="/rest/api/login/signin" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Signin" id="53796dc2-c58c-4b27-822d-f8b82e2e0e19" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request>{
+  "emailId": "${#TestSuite#emailId}",
+  "name": "${#TestSuite#name}",
+  "password": "${#TestSuite#password}",
+  "role": {
+    "description": "Created for automation testing",
+    "name": "${#TestSuite#roleName}",
+    "roleId": ${#TestSuite#roleId}
+  },
+  "userId": ${#TestSuite#userId}
+}</con:request><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/login/signin</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Verify Login" id="2f21bb37-e054-4fb1-abc3-0962a7475c96"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+/*def response = testRunner.testCase.testSteps["Signin"].testRequest.response.contentAsString
+def slurper = new JsonSlurper().parseText(response)
+String httpStatus = context.expand(slurper.httpStatusCode)
+log.info(httpStatus)
+//assert httpStatus == "200 OK"
+//String userId = context.expand(slurper.body.userId)
+//log.info(userId)
+//testRunner.testCase.testSuite.setPropertyValue("userId", userId) */
+def response =context.expand('${Signin#Response}').toString()
+def slurper =new JsonSlurper()
+def json = slurper.parseText response
+log.inf(json)
+def GetAllProducts=context.testCase
+def runner
+def counterAssets</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e0507e3f-0921-4955-b491-0b5e5185bf61" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AddCart TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [AddCart] located at [/rest/api/cart/user/undefined]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="920515f8-c111-4fb9-9f2a-d18674307ee1"><con:settings/><con:config service="http://okmry52647dns.eastus.cloudapp.azure.com:8089" resourcePath="/rest/api/cart/user/undefined" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="fb8f0ed9-a85c-4c6e-a6bf-6507656cf391" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request>{
+  "availability": true,
+  "categoryId": {
+    "description": "string",
+    "id": 0,
+    "name": "string"
+  },
+  "color": "string",
+  "createdOn": "string",
+  "description": "string",
+  "discount": 0,
+  "images": [
+    {
+      "description": "string",
+      "id": 0,
+      "pimage": "string",
+      "title": "string"
+    }
+  ],
+  "materialDescription": "string",
+  "name": "armchair etc..",
+  "pid": 12345,
+  "price": 0,
+  "primaryImage": {},
+  "updateOn": "string",
+  "warranty": 0
+}</con:request><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/cart/user/undefined</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="81546e62-4db9-4ba9-8796-348313b17bdc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetCart TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [GetCart] located at [/rest/api/cart/undefined]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="99510c7f-03b7-4d9c-a559-64ba940ce422"><con:settings/><con:config service="http://okmry52647dns.eastus.cloudapp.azure.com:8089" resourcePath="/rest/api/cart/undefined" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="5e4e0044-5606-4ba4-a100-ced863e4e5e8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request/><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/cart/undefined</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="bf6d816e-1864-4d1d-86b0-43a20f557d35" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="UpdateCart TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [UpdateCart] located at [/rest/api/cart/]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="54165328-bfb3-46c4-91bd-4994e0ba219c"><con:settings/><con:config service="http://okmry52647dns.eastus.cloudapp.azure.com:8089" resourcePath="/rest/api/cart/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="5f98a76d-e9f6-464d-9d96-1f61e2695278" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request>{
+  "cartId": 1234,
+  "product": {
+    "availability": true,
+    "categoryId": {
+      "description": "string",
+      "id": 0,
+      "name": "string"
+    },
+    "color": "string",
+    "createdOn": "string",
+    "description": "string",
+    "discount": 0,
+    "images": [
+      {
+        "description": "string",
+        "id": 0,
+        "pimage": "string",
+        "title": "string"
+      }
+    ],
+    "materialDescription": "string",
+    "name": "armchair etc..",
+    "pid": 12345,
+    "price": 0,
+    "primaryImage": {},
+    "updateOn": "string",
+    "warranty": 0
+  },
+  "profile": {
+    "addressCity": "string",
+    "addressLandMark": "string",
+    "addressLane1": "string",
+    "addressLane2": "string",
+    "addressState": "string",
+    "addressZipCode": "string",
+    "emailId": "string",
+    "gender": "MALE",
+    "mobileNo": "string",
+    "name": "jamal,vincent, etc..",
+    "password": "string",
+    "role": {
+      "description": "string",
+      "name": "Admin, user, etc..",
+      "roleId": 1234
+    },
+    "userId": 1234,
+    "userStatus": "ACTIVE"
+  },
+  "quantity": 0
+}</con:request><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/cart/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="22e1463d-30c5-46c5-af30-c5f926669eb1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Delete TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Delete] located at [/rest/api/cart/undefined]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="52142267-e2d1-4eb0-b19f-4581eaad62a4"><con:settings/><con:config service="http://okmry52647dns.eastus.cloudapp.azure.com:8089" resourcePath="/rest/api/cart/undefined" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="9817e8a2-6226-4227-83c1-2396fa5c707b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request>Cartid</con:request><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/cart/undefined</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c134a0ae-9640-4095-b77b-2ec7e3a31be5" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetAllCategory TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [GetAllCategory] located at [/rest/api/category/all]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="9ad0c702-dc67-4549-9224-309d20df6147"><con:settings/><con:config service="http://okmry52647dns.eastus.cloudapp.azure.com:8089" resourcePath="/rest/api/category/all" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="98556435-9e13-4d7e-ac5e-0c39f457e18d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request/><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/category/all</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="802c75db-7992-45aa-805b-2866505489d9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetAllProduct TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [GetAllProduct] located at [/rest/api/product/all]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="6aa4abd6-b457-4e88-b0b5-8d1cf061d21f"><con:settings/><con:config service="http://okmry52647dns.eastus.cloudapp.azure.com:8089" resourcePath="/rest/api/product/all" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="66588563-fedd-4e63-995c-1ae5fa431f4e" mediaType="application/json"><con:settings/><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request/><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/product/all</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>emailId</con:name><con:value>lucky11@gmail.com</con:value></con:property><con:property><con:name>name</con:name><con:value>Laxman</con:value></con:property><con:property><con:name>password</con:name><con:value>Welcome@123</con:value></con:property><con:property><con:name>roleName</con:name><con:value>user</con:value></con:property><con:property><con:name>roleId</con:name><con:value>1212</con:value></con:property><con:property><con:name>userId</con:name><con:value>213</con:value></con:property></con:properties></con:testSuite><con:testSuite id="add2f54c-2c9b-4a6f-bb20-20a589edef23" name="GetRequest"><con:description>TestSuite generated for REST Service [http://okmry52647dns.eastus.cloudapp.azure.com:8089]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="677d98cf-a3d4-4750-af82-2c1ccddc8032" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="product TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [product] located at [/rest/api/product/1]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="1d2e92bf-886f-4572-92c7-03b46f6e52b8"><con:settings/><con:config service="http://okmry52647dns.eastus.cloudapp.azure.com:8089" resourcePath="/rest/api/product/1" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="e012460a-0bbc-4858-95b8-d4534c4bf35c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://okmry52647dns.eastus.cloudapp.azure.com:8089</con:endpoint><con:request/><con:originalUri>http://okmry52647dns.eastus.cloudapp.azure.com/rest/api/product/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="f005ca06-f440-4b44-ab7b-f49e5770138c"><con:settings/><con:config><script/></con:config></con:testStep><con:testStep type="properties" name="Properties" id="9099032b-5012-4979-8012-c611964927b9"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>httpStatusCode</con:name><con:value>302</con:value></con:property></con:properties></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
